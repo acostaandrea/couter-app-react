@@ -3,10 +3,12 @@ const newMesagge = {
   title: 'My First App',
 }
 const mensaje = () => 'Hola mundo desde una función';
-export const FirstApp = () => {
+export const FirstApp = ({title, subtitle}) => {
+  // console.log(title)
   return (
     <>
-      <h1>{mensaje()}</h1>
+      <h1>{title}</h1>
+      <h3>{subtitle +1}</h3>
       {/* <code>{JSON.stringify(newMesagge)}</code> */}
     </>
   )
